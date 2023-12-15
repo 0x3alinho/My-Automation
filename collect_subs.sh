@@ -21,7 +21,8 @@ rm githup_subs.txt
 #echo "starting brute forcing"
 #brut_forcing
 wget https://gist.githubusercontent.com/six2dez/a307a04a222fab5a57466c51e1569acf/raw
-cat raw >> my_word_list.txt
+wget https://raw.githubusercontent.com/rajesh6927/subdomain-bruteforce-wordlist/main/Subdomain-wordlist.txt
+cat raw Subdomain-wordlist.txt | sort -u >> my_word_list.txt
 rm raw
 #puredns bruteforce my_word_list.txt -d scope.txt -w puredns_result.txt
 #cat puredns_result.txt >> all.txt
